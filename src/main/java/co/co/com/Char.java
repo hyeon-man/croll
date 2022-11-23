@@ -4,23 +4,55 @@ package co.co.com;
 import org.jsoup.select.Elements;
 
 public class Char {
-    private Elements name;
-    private Elements level;
+    private String name;
+    private String level;
 
+    private String server;
 
-    public Elements getName() {
+    private String job;
+    private String infoTitle;
+
+    public String getInfoTitle() {
+        return infoTitle;
+    }
+
+    public void setInfoTitle(String infoTitle) {
+        this.infoTitle = infoTitle;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public String getServer() {
+        return server;
+    }
+
+    public void setServer(String server) {
+        this.server = server;
+    }
+
+    public String getName() {
         return name;
     }
 
-    public void setName(Elements name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Elements getLevel() {
+    public String getLevel() {
         return level;
     }
 
-    public void setLevel(Elements level) {
+    public void setLevel(String level) {
         this.level = level;
     }
+
+
+
+
 }
