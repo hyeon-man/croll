@@ -14,25 +14,27 @@
     <button type="button" class="searchButton">검색</button>
 </div>
 
+<div class="name">
+    <p></p>
+</div>
+
+<div class="infoTitle">
+    <p></p>
+</div>
+
+<div class="level">
+    <p></p>
+</div>
+
+<div class="server">
+    <p></p>
+</div>
+
+<div class="job">
+    <p></p>
+</div>
 
 <script src="/resources/jquery/jquery-3.6.1.min.js"></script>
-<script>
-    $('.searchButton').on('click', function () {
-        const charName = $('#charName').val();
-
-        console.log('응애' + charName);
-
-        $.ajax('/char/'+ charName, {
-            method: 'get',
-            contentType: 'application/json',
-            dataType: 'json',
-            success: result => {
-                console.log(result);
-            }
-
-        })
-    });
-
-</script>
+<script src="/resources/js/home.js"></script>
 </body>
 </html>

@@ -22,8 +22,11 @@ public class HomeController {
     @ResponseBody
     @GetMapping("/char/{charName}")
     public Character searchChar(@PathVariable String charName, Character character, Croll croll) throws IOException {
+
         character.setName(charName);
         croll.getChar(character);
+
+        System.out.println("!<-- -->" + character.getJob() +  character.getLevel() + "<!-- -->");
 
         return character;
     }
