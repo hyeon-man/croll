@@ -1,9 +1,7 @@
-package co.co.com;
+package co.co.com.model;
 
 
-import org.jsoup.select.Elements;
-
-public class Char {
+public class Character {
     private String name;
     private String level;
 
