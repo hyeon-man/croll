@@ -28,6 +28,5 @@
     <p> ${item.infoTitle} </p>
 </div>
 
-
 </body>
 </html>
